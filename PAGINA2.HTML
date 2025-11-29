@@ -1,64 +1,134 @@
 <style>
     @font-face {
-  font-family: aa56;
-  src: url(fuente/RobotoSlab-Regular.woff2);
-}
+        font-family: aa56;
+        src: url(fuente/RobotoSlab-Regular.woff2);
+    }
 </style>
+
 <html>
 <head>
 <title>Desarrollo de Software Educativo - Página 2</title>
+
+<!-- VIEWPORT PARA ANDROID -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body background="imagenes/aaa.jpeg" style="font-family: aa56; width:100%; height:100%; margin:0;">
-<div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); z-index: -1;"></div>
+
+<!-- FONDO CON TRANSPARENCIA 0.5 SIN OVERLAY -->
+<body style="
+    margin: 0;
+    font-family: aa56;
+    width: 100%;
+    height: 100%;
+    background:
+      linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+      url('imagenes/aaa.jpeg') no-repeat center center fixed;
+    background-size: cover;
+">
+
 <header>
-<section style="background-color: rgba(40,46,45,0.85); padding: 32px 25px 32px 25px; border-radius: 16px; width: 80%; margin: 32px auto 0 auto; text-align: center;">
-<h1 style="color: white; margin: 0; font-size: 2.8em; letter-spacing: 2px; font-weight: bold;">DESARROLLO DE SOFTWARE EDUCATIVO</h1>
+<section style="background-color: rgba(40,46,45,0.85); padding: 32px 25px; border-radius: 16px; width: 80%; margin: 32px auto 0; text-align: center;">
+<h1 style="color: white; margin: 0; font-size: 2.8em; letter-spacing: 2px; font-weight: bold;">
+DESARROLLO DE SOFTWARE EDUCATIVO
+</h1>
 </section>
 </header>
+
 <section style="width: 80%; margin: 0 auto; text-align: center;">
-<hr style="border-top: 2px solid #00b5bb; margin: 32px 0 24px 0; width: 100%;">
-<h2 style="color: #00b5bb; margin: 0 0 12px 0; font-size: 1.7em; text-shadow: 0px 0px 20px #00b5bb;"><em>PÁGINA 2 – Ventajas del Software Educativo</em></h2>
-<p style="color: #e0e0e0; font-size: 1.15em; margin: 0 0 18px 0;">El software educativo ha revolucionado el proceso de enseñanza y aprendizaje, brindando oportunidades únicas para estudiantes y docentes. A continuación, exploramos cómo estas herramientas digitales impactan positivamente en la educación moderna.</p>
-<a href="index.html" style="color: white; background: #00b5bb; padding: 10px 22px; border-radius: 8px; font-size: 1.1em; box-shadow: 0px 0px 20px #b2ebf2; font-weight: bold; ">MENÚ PRINCIPAL</a>
+<hr style="border-top: 2px solid #00b5bb; margin: 32px 0 24px; width: 100%;">
+
+<h2 style="color: #00b5bb; margin: 0 0 12px; font-size: 1.7em; text-shadow: 0px 0px 20px #00b5bb;">
+<em>PÁGINA 2 – Ventajas del Software Educativo</em>
+</h2>
+
+<p style="color: #e0e0e0; font-size: 1.15em; margin-bottom: 18px;">
+El software educativo ha revolucionado el proceso de enseñanza y aprendizaje, brindando oportunidades únicas para estudiantes y docentes. A continuación, exploramos cómo estas herramientas digitales impactan positivamente en la educación moderna.
+</p>
+
+<a href="index.html" style="color: white; background: #00b5bb; padding: 10px 22px; border-radius: 8px; font-size: 1.1em; box-shadow: 0px 0px 20px #b2ebf2; font-weight: bold;">
+MENÚ PRINCIPAL
+</a>
 </section>
+
 <main>
-<section style="background-color: rgba(40,46,45,0.85); padding: 25px; border-radius: 12px; width: 80%; margin: 30px auto 0 auto; text-align: center;">
-<h1 style="color: white; font-size: 1.5em; margin-bottom: 10px;text-shadow: 0px 0px 20px #b2ebf2">Ventajas Generales</h1>
-<p style="color: #b2ebf2; font-size: 1.1em; margin-bottom: 0;">El software educativo transforma la manera de aprender y enseñar, ofreciendo recursos interactivos, personalizados y accesibles para todos. Su integración en el aula y en el estudio individual permite una experiencia más dinámica y enriquecedora.</p>
+
+<section style="background-color: rgba(40,46,45,0.85); padding: 25px; border-radius: 12px; width: 80%; margin: 30px auto 0; text-align: center;">
+<h1 style="color: white; font-size: 1.5em; margin-bottom: 10px; text-shadow: 0px 0px 20px #b2ebf2;">
+Ventajas Generales
+</h1>
+<p style="color: #b2ebf2; font-size: 1.1em; margin-bottom: 0;">
+El software educativo transforma la manera de aprender y enseñar, ofreciendo recursos interactivos, personalizados y accesibles para todos.
+</p>
 </section>
-<section style="width: 70%; margin: 30px auto 0 auto; text-align: center;">
+
+<section style="width: 70%; margin: 30px auto 0; text-align: center;">
+
+<!-- BLOQUE 1 -->
 <div style="background-color: rgba(40,46,45,0.65); padding: 22px 28px; border-radius: 12px; margin-bottom: 32px;">
-<p style="color: #00ff00; font-size: 1.15em; font-weight: 500; margin-bottom: 18px;">El acceso a plataformas educativas digitales permite que los estudiantes aprendan a su propio ritmo, adaptando los contenidos a sus necesidades y estilos de aprendizaje. Además, los docentes pueden utilizar herramientas de seguimiento y evaluación para mejorar la calidad educativa.</p>
-<img src="imagenes/Pagina2/Pagina2Foto1.jpg" style="width: 38%; height: auto; margin: 18px 0; border-radius: 10px;box-shadow: 0px 0px 20px #000000">
+<p style="color: #00ff00; font-size: 1.15em; font-weight: 500; margin-bottom: 18px;">
+El acceso a plataformas educativas digitales permite que los estudiantes aprendan a su propio ritmo, adaptando los contenidos a sus necesidades y estilos de aprendizaje.
+</p>
+<img src="imagenes/Pagina2/Pagina2Foto1.jpg" style="width: 38%; height: auto; margin: 18px 0; border-radius: 10px; box-shadow: 0px 0px 20px #000;">
 </div>
+
+<!-- BLOQUE 2 -->
 <div style="background-color: rgba(40,46,45,0.65); padding: 22px 28px; border-radius: 12px; margin-bottom: 32px;">
-<p style="color: #00ff00; font-size: 1.15em; font-weight: 500; margin-bottom: 18px;">La inclusión de recursos multimedia, como videos, simulaciones y actividades interactivas, fomenta la motivación y el interés por el aprendizaje. El software educativo facilita la colaboración entre estudiantes, promoviendo el trabajo en equipo y el intercambio de ideas.</p>
-<img src="imagenes/Pagina2/Pagina2Foto2.jpg" style="width: 38%; height: auto; margin: 18px 0; border-radius: 10px;box-shadow: 0px 0px 20px #000000">
+<p style="color: #00ff00; font-size: 1.15em; font-weight: 500; margin-bottom: 18px;">
+Los recursos multimedia como videos, simulaciones y actividades interactivas fomentan la motivación y el interés por el aprendizaje.
+</p>
+<img src="imagenes/Pagina2/Pagina2Foto2.jpg" style="width: 38%; height: auto; margin: 18px 0; border-radius: 10px; box-shadow: 0px 0px 20px #000;">
 </div>
+
+<!-- BLOQUE 3 -->
 <div style="background-color: rgba(40,46,45,0.65); padding: 22px 28px; border-radius: 12px; margin-bottom: 32px;">
-<p style="color: #00ff00; font-size: 1.15em; font-weight: 500; margin-bottom: 18px;">La flexibilidad que ofrecen estas herramientas permite estudiar en cualquier momento y lugar, eliminando barreras geográficas y temporales. Además, la actualización constante de los contenidos garantiza que la información esté siempre vigente y relevante.</p>
-<img src="imagenes/Pagina2/Pagina2Foto3.jpg" style="width: 38%; height: auto; margin: 18px 0; border-radius: 10px;box-shadow: 0px 0px 20px #000000">
+<p style="color: #00ff00; font-size: 1.15em; font-weight: 500; margin-bottom: 18px;">
+La flexibilidad del software educativo permite estudiar en cualquier momento y lugar, eliminando barreras geográficas y temporales.
+</p>
+<img src="imagenes/Pagina2/Pagina2Foto3.jpg" style="width: 38%; height: auto; margin: 18px 0; border-radius: 10px; box-shadow: 0px 0px 20px #000;">
 </div>
+
+<!-- BLOQUE 4 -->
 <div style="background-color: rgba(40,46,45,0.65); padding: 22px 28px; border-radius: 12px; margin-bottom: 32px;">
-<p style="color: #00ff00; font-size: 1.15em; font-weight: 500; margin-bottom: 18px;">El software educativo contribuye a la inclusión y equidad, permitiendo que más personas accedan a una educación de calidad, independientemente de sus condiciones sociales o económicas.</p>
-<img src="imagenes/Pagina2/Pagina2Foto4.jpg" style="width: 38%; height: auto; margin: 18px 0; border-radius: 10px;box-shadow: 0px 0px 20px #000000">
+<p style="color: #00ff00; font-size: 1.15em; font-weight: 500; margin-bottom: 18px;">
+El software educativo contribuye a la inclusión y equidad, permitiendo que más personas accedan a una educación de calidad.
+</p>
+<img src="imagenes/Pagina2/Pagina2Foto4.jpg" style="width: 38%; height: auto; margin: 18px 0; border-radius: 10px; box-shadow: 0px 0px 20px #000;">
 </div>
+
+<!-- BLOQUE 5 -->
 <div style="background-color: rgba(40,46,45,0.65); padding: 22px 28px; border-radius: 12px; margin-bottom: 32px;">
-<p style="color: #00ff00; font-size: 1.15em; font-weight: 500; margin-bottom: 18px;">La integración de inteligencia artificial y análisis de datos en el software educativo permite personalizar aún más la experiencia de aprendizaje, identificando áreas de mejora y potenciando el desarrollo de habilidades clave.</p>
-<img src="imagenes/Pagina2/Pagina2Foto5.jpg" style="width: 38%; height: auto; margin: 18px 0; border-radius: 10px;box-shadow: 0px 0px 20px #000000">
+<p style="color: #00ff00; font-size: 1.15em; font-weight: 500; margin-bottom: 18px;">
+La inteligencia artificial permite personalizar aún más el aprendizaje, identificando áreas de mejora y potenciando habilidades clave.
+</p>
+<img src="imagenes/Pagina2/Pagina2Foto5.jpg" style="width: 38%; height: auto; margin: 18px 0; border-radius: 10px; box-shadow: 0px 0px 20px #000;">
 </div>
+
 </section>
-<section style="background-color: rgba(40,46,45,0.85); padding: 25px; border-radius: 12px; width: 80%; margin: 30px auto 50px auto; text-align: center;">
-<h2 style="color: #00b5bb; font-size: 1.3em; font-weight: 600; margin-bottom: 12px; text-shadow: 0px 0px 20px #00b5bb;">Conclusión</h2>
-<p style="color: #e0e0e0; font-size: 1.13em;">El desarrollo de software educativo representa una oportunidad invaluable para transformar la educación, haciendo posible un aprendizaje más accesible, personalizado y motivador para todos los involucrados.</p>
+
+<section style="background-color: rgba(40,46,45,0.85); padding: 25px; border-radius: 12px; width: 80%; margin: 30px auto 50px; text-align: center;">
+<h2 style="color: #00b5bb; font-size: 1.3em; font-weight: 600; margin-bottom: 12px; text-shadow: 0px 0px 20px #00b5bb;">
+Conclusión
+</h2>
+<p style="color: #e0e0e0; font-size: 1.13em;">
+El software educativo representa una oportunidad invaluable para transformar la educación.
+</p>
 </section>
+
 </main>
+
 <footer>
 <nav style="display: flex; justify-content: center; align-items: center; margin: 30px 0;">
-<a href="index.html" style="color: #fff; background: #00b5bb;margin-bottom: 50px; padding: 10px 24px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 1.1em;">Volver...</a>
+<a href="index.html" style="color: #fff; background: #00b5bb; margin-bottom: 50px; padding: 10px 24px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 1.1em;">
+Volver...
+</a>
 </nav>
+
 <hr style="border-top: 2px solid #00b5bb; margin: 32px 0 24px; width: 100%;">
-<h5 style="color: white; margin-left: 25px;">Pagina por: Angel López 11 "P" - 2025<span><img src="imagenes/KTBLANCO.png" style="width: 55px; height:50px; vertical-align: middle;"></span></h5>
+
+<h5 style="color: white; margin-left: 25px;">
+Pagina por: Angel López 11 "P" - 2025
+<span><img src="imagenes/KTBLANCO.png" style="width: 55px; vertical-align: middle;"></span>
+</h5>
 </footer>
+
 </body>
 </html>

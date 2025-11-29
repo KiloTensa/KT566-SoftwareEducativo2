@@ -1,64 +1,140 @@
 <style>
     @font-face {
-  font-family: aa56;
-  src: url(fuente/RobotoSlab-Regular.woff2);
-}
+        font-family: aa56;
+        src: url(fuente/RobotoSlab-Regular.woff2);
+    }
 </style>
+
 <html>
 <head>
 <title>Tendencias y Futuro del Software Educativo</title>
+
+<!-- VIEWPORT PARA QUE SE VEA BIEN EN ANDROID -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body background="imagenes/aaa.jpeg" style="font-family: aa56; width:100%; height:100%; margin:0;">
-<div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); z-index: -1;"></div>
+
+<body style="
+    margin: 0;
+    font-family: aa56;
+    width: 100%;
+    height: 100%;
+    background:
+      linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+      url('imagenes/aaa.jpeg') no-repeat center center fixed;
+    background-size: cover;
+">
+
 <header>
-<section style="background-color: rgba(40,46,45,0.85); padding: 32px 25px 32px 25px; border-radius: 16px; width: 80%; margin: 32px auto 0 auto; text-align: center;">
-<h1 style="color: white; margin: 0; font-size: 2.8em; letter-spacing: 2px; font-weight: bold;">DESARROLLO DE SOFTWARE EDUCATIVO</h1>
+<section style="background-color: rgba(40,46,45,0.85); padding: 32px 25px; border-radius: 16px; width: 80%; margin: 32px auto 0; text-align: center;">
+<h1 style="color: white; margin: 0; font-size: 2.8em; letter-spacing: 2px; font-weight: bold;">
+DESARROLLO DE SOFTWARE EDUCATIVO
+</h1>
 </section>
 </header>
+
 <section style="width: 80%; margin: 0 auto; text-align: center;">
-<hr style="border-top: 2px solid #00b5bb; margin: 32px 0 24px 0; width: 100%;">
-<h2 style="color: #00b5bb; margin: 0 0 12px 0; font-size: 1.7em;text-shadow: 0px 0px 20px #00b5bb;"><em>PÁGINA 5 – Evaluación y Calidad del Software Educativo</em></h2>
-<p style="color: #e0e0e0; font-size: 1.15em; margin: 0 0 18px 0;">La fase de evaluación y pruebas garantiza que el software educativo funcione correctamente, cumpla con sus objetivos pedagógicos y ofrezca una experiencia satisfactoria para el usuario. Esta etapa es esencial antes de implementar el producto en un entorno real de aprendizaje.</p>
-<a href="index.html" style="color: white; background: #00b5bb; padding: 10px 22px; border-radius: 8px; font-size: 1.1em; box-shadow: 0px 0px 20px #b2ebf2; font-weight: bold; ">MENÚ PRINCIPAL</a>
+<hr style="border-top: 2px solid #00b5bb; margin: 32px 0 24px; width: 100%;">
+
+<h2 style="color: #00b5bb; margin-bottom: 12px; font-size: 1.7em; text-shadow: 0px 0px 20px #00b5bb;">
+<em>PÁGINA 5 – Evaluación y Calidad del Software Educativo</em>
+</h2>
+
+<p style="color: #e0e0e0; font-size: 1.15em; margin-bottom: 18px;">
+La fase de evaluación garantiza que el software funcione correctamente, cumpla sus objetivos pedagógicos y ofrezca una experiencia satisfactoria. Es esencial antes de implementarlo en un aula real.
+</p>
+
+<a href="index.html"
+style="color: white; background: #00b5bb; padding: 10px 22px; border-radius: 8px; font-size: 1.1em; box-shadow: 0px 0px 20px #b2ebf2; font-weight: bold;">
+MENÚ PRINCIPAL
+</a>
 </section>
+
 <main>
-<section style="background-color: rgba(40,46,45,0.85); padding: 25px; border-radius: 12px; width: 80%; margin: 30px auto 0 auto; text-align: center;">
-<h1 style="color: white; font-size: 1.5em; margin-bottom: 10px;">Importancia de las Pruebas</h1>
-<p style="color: #b2ebf2; font-size: 1.1em; margin-bottom: 0;">La evaluación del software educativo permite identificar errores técnicos, fallos de diseño y dificultades de uso que podrían afectar la experiencia del estudiante. Probar el sistema en diferentes dispositivos y condiciones ayuda a asegurar que la herramienta sea estable, accesible y eficiente. Además, esta fase verifica que los contenidos sean claros, precisos y adecuados para el nivel del usuario final.</p>
+
+<section style="background-color: rgba(40,46,45,0.85); padding: 25px; border-radius: 12px; width: 80%; margin: 30px auto 0; text-align: center;">
+<h1 style="color: white; font-size: 1.5em; margin-bottom: 10px;">
+Importancia de las Pruebas
+</h1>
+
+<p style="color: #b2ebf2; font-size: 1.1em;">
+La evaluación permite detectar errores técnicos, fallos de diseño y problemas de usabilidad. Probar el software en distintos dispositivos asegura que sea estable, accesible y eficaz.
+</p>
+</section>
+
+<!-- SECCIÓN 1 -->
 <section style="width: 80%; margin: 40px auto; display: flex; justify-content: space-between; align-items: center; gap: 30px;">
+
 <div style="flex: 1; background-color: rgba(40,46,45,0.65); padding: 22px 28px; border-radius: 12px;">
-<h3 style="color: #00b5bb; font-weight: 600; margin-bottom: 10px; text-shadow: 0px 0px 20px #00b5bb;">Pruebas con Usuarios Reales</h3>
-<p style="color: #cccccc; font-size: 1.13em; font-weight: 500;">Las pruebas con estudiantes y docentes son fundamentales para validar la efectividad del software. Durante estas pruebas se observa cómo interactúan con la plataforma, qué tan intuitiva les resulta y qué dificultades encuentran. La retroalimentación directa permite ajustar elementos pedagógicos, mejorar la navegación y optimizar la presentación del contenido para lograr un aprendizaje más fluido.</p>
+<h3 style="color: #00b5bb; margin-bottom: 10px; font-weight: 600; text-shadow: 0px 0px 20px #00b5bb;">
+Pruebas con Usuarios Reales
+</h3>
+
+<p style="color: #cccccc; font-size: 1.13em; font-weight: 500;">
+Las pruebas con estudiantes y docentes revelan qué tan intuitiva es la plataforma y qué dificultades encuentran los usuarios reales. La retroalimentación permite ajustar navegación, contenido y diseño.
+</p>
 </div>
+
 <div style="flex: 1; text-align: right;">
-<img src="imagenes/Pagina5/Pagina5Foto1.jpg" style="width: 90%; border-radius: 12px; box-shadow: 0 4px 18px rgba(0,0,0,0.35);">
+<img src="imagenes/Pagina5/Pagina5Foto1.jpg"
+style="width: 90%; border-radius: 12px; box-shadow: 0 4px 18px rgba(0,0,0,0.35);">
 </div>
 </section>
+
+<!-- SECCIÓN 2 -->
 <section style="width: 80%; margin: 40px auto; display: flex; justify-content: space-between; align-items: center; gap: 30px;">
+
 <div style="flex: 1;">
-<img src="imagenes/Pagina5/Pagina5Foto2.jpg" style="width: 90%; border-radius: 12px; box-shadow: 0 4px 18px rgba(0,0,0,0.35);">
+<img src="imagenes/Pagina5/Pagina5Foto2.jpg"
+style="width: 90%; border-radius: 12px; box-shadow: 0 4px 18px rgba(0,0,0,0.35);">
 </div>
+
 <div style="flex: 1; background-color: rgba(40,46,45,0.65); padding: 22px 28px; border-radius: 12px;">
-<h3 style="color: #00b5bb; font-weight: 600; margin-bottom: 10px; text-shadow: 0px 0px 20px #00b5bb;">Ajustes y Mejora Continua</h3>
-<p style="color: #cccccc; font-size: 1.13em; font-weight: 500;">Después de analizar los resultados de las pruebas, el software se somete a mejoras y actualizaciones que fortalecen su calidad. Esto puede incluir correcciones de errores, cambios en la interfaz, ajustes en la dificultad de las actividades o incorporación de nuevas funciones. La mejora continua asegura que el software se mantenga vigente, útil y adaptado a las necesidades de los usuarios a largo plazo.</p>
+<h3 style="color: #00b5bb; margin-bottom: 10px; font-weight: 600; text-shadow: 0px 0px 20px #00b5bb;">
+Ajustes y Mejora Continua
+</h3>
+
+<p style="color: #cccccc; font-size: 1.13em; font-weight: 500;">
+Tras analizar los resultados, se aplican mejoras como corrección de errores, cambios de interfaz, ajustes de dificultad o nuevas funciones. Esto mantiene el software vigente y útil.
+</p>
 </div>
 </section>
+
+<!-- SECCIÓN 3 -->
 <section style="width: 80%; margin: 40px auto; display: flex; justify-content: space-between; align-items: center; gap: 30px;">
+
 <div style="flex: 1; background-color: rgba(40,46,45,0.65); padding: 22px 28px; border-radius: 12px;">
-<h3 style="color: #00b5bb; font-weight: 600; margin-bottom: 10px; text-shadow: 0px 0px 20px #00b5bb;">Validación Pedagógica</h3>
-<p style="color: #cccccc; font-size: 1.13em; font-weight: 500;">Además de las pruebas técnicas, es esencial realizar una validación pedagógica que asegure que el software realmente cumple con su propósito educativo. En esta evaluación participan especialistas en educación que analizan la pertinencia de los contenidos, la claridad de las explicaciones y la coherencia entre los objetivos planteados y las actividades propuestas. Este proceso permite confirmar que el software no solo funciona bien, sino que también enseña de manera efectiva, favoreciendo el aprendizaje significativo y respondiendo a las necesidades reales de los estudiantes.</p>
+<h3 style="color: #00b5bb; margin-bottom: 10px; font-weight: 600; text-shadow: 0px 0px 20px #00b5bb;">
+Validación Pedagógica
+</h3>
+
+<p style="color: #cccccc; font-size: 1.13em; font-weight: 500;">
+Expertos en educación verifican que los contenidos sean claros, correctos y adecuados al nivel del estudiante. Esto garantiza que el software no solo funcione, sino que también enseñe de forma efectiva.
+</p>
 </div>
+
 <div style="flex: 1; text-align: right;">
-<img src="imagenes/Pagina5/Pagina5Foto3.png" style="width: 90%; border-radius: 12px; box-shadow: 0 4px 18px rgba(0,0,0,0.35);">
+<img src="imagenes/Pagina5/Pagina5Foto3.png"
+style="width: 90%; border-radius: 12px; box-shadow: 0 4px 18px rgba(0,0,0,0.35);">
 </div>
 </section>
+
 </main>
+
 <footer>
 <nav style="display: flex; justify-content: center; align-items: center; margin: 30px 0;">
-<a href="index.html" style="color: #fff; background: #00b5bb;margin-bottom: 50px; padding: 10px 24px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 1.1em;">Volver...</a>
+<a href="index.html"
+style="color: #fff; background: #00b5bb; padding: 10px 24px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 1.1em;">
+Volver...
+</a>
 </nav>
+
 <hr style="border-top: 2px solid #00b5bb; margin: 32px 0 24px; width: 100%;">
-<h5 style="color: white; margin-left: 25px;">Pagina por: Angel López 11 "P" - 2025<span><img src="imagenes/KTBLANCO.png" style="width: 55px; height:50px; vertical-align: middle;"></span></h5>
+
+<h5 style="color: white; margin-left: 25px;">
+Página por: Angel López 11 "P" – 2025
+<span><img src="imagenes/KTBLANCO.png" style="width: 55px; height:50px; vertical-align: middle;"></span>
+</h5>
 </footer>
+
 </body>
 </html>
