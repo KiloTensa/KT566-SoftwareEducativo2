@@ -1,116 +1,193 @@
-<style>
-    @font-face {
-        font-family: aa56;
-        src: url(fuente/RobotoSlab-Regular.woff2);
-    }
-</style>
-
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
 <title>Desarrollo de Software Educativo - Página 1</title>
 
-<!-- VIEWPORT PARA ANDROID -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+/* 🔳 ESTILO GENERAL PIXEL ART PARA CONTENEDORES */
+.pixel-sign {
+  padding: 20px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+
+  background: repeating-linear-gradient(
+    to bottom,
+    #8c3e1c 0px,
+    #8c3e1c 32px,
+    #7a3318 32px,
+    #7a3318 36px
+  );
+
+  border: 6px solid #3a3a46;
+  border-radius: 0;
+
+  box-shadow:
+    0 0 0 4px #2a2a33,
+    inset 0 0 0 4px #55556a,
+    inset 0 0 0 8px #2e2e37;
+
+  image-rendering: pixelated;
+}
+
+/* 🔵 Botones pixelados */
+.pixel-btn {
+  display: inline-block;
+  padding: 12px 28px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  font-size: 1.2em;
+  width: 260px;   /* mismo tamaño */
+  height: 25px;
+
+  font-size: 1em;
+
+  background: repeating-linear-gradient(
+    to bottom,
+    #8c3e1c 0px,
+    #8c3e1c 32px,
+    #7a3318 32px,
+    #7a3318 36px
+  );
+
+  border: 4px solid #5B3A24;
+  border-radius: 0;
+
+  box-shadow:
+    0px 4px 0px #3A2316,
+    0px 8px 0px #3A2316,
+    0px 8px 0px 4px #3A2316;
+
+  image-rendering: pixelated;
+  transition: transform 0.05s ease-out;
+}
+
+.pixel-btn:hover {
+  transform: translateY(-2px);
+}
+
+.pixel-btn:active {
+  transform: translateY(3px);
+  box-shadow:
+    0px 2px 0px #3A2316,
+    0px 4px 0px #3A2316;
+}
+
+/* Fuente */
+@font-face {
+  font-family: aa56;
+  src: url(fuente/RobotoSlab-Regular.woff2);
+}
+
+body {
+  margin: 0;
+  font-family: aa56;
+  width: 100%;
+  height: 100%;
+  background:
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('imagenes/aaa.jpeg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+</style>
+
 </head>
 
-<!-- FONDO CON TRANSPARENCIA 0.5 -->
-<body style="
-    margin: 0;
-    font-family: aa56;
-    width: 100%;
-    height: 100%;
-    background:
-      linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-      url('imagenes/aaa.jpeg') no-repeat center center fixed;
-    background-size: cover;
-">
+<body>
 
 <header>
-<section style="background-color: rgba(40,46,45,0.85); padding: 32px 25px; border-radius: 16px; width: 80%; margin: 32px auto 0; text-align: center;">
-<h1 style="color: white; margin: 0; font-size: 2.8em; letter-spacing: 2px; font-weight: bold;">
-DESARROLLO DE SOFTWARE EDUCATIVO
-</h1>
+<section class="pixel-sign" style="width: 80%; margin: 32px auto;">
+  <h1 style="margin: 0; font-size: 2.5em; letter-spacing: 2px;">
+    DESARROLLO DE SOFTWARE EDUCATIVO
+  </h1>
+  <h2 style="color: #c68864; margin-top: 10px; font-size: 1.4em;">
+    <em>PÁGINA 1 — Introducción</em>
+  </h2>
 </section>
 </header>
 
 <section style="width: 80%; margin: 0 auto; text-align: center;">
 
-<h2 style="color: #00b5bb; margin: 12px; text-shadow: 0px 0px 20px #b2ebf2;">
-<em>PÁGINA 1 – Introducción</em>
-</h2>
-
-<p style="color: #e0e0e0; font-size: 1.15em; margin: 0 0 18px;">
-Explora los conceptos, ventajas y procesos clave del desarrollo de software educativo. Esta sección te guiará desde la definición hasta el proceso de creación y evaluación de herramientas digitales para el aprendizaje.
+<p style="color: white; font-size: 1.15em; margin-bottom: 22px;">
+Explora los conceptos, ventajas y procesos clave del desarrollo de software educativo.
 </p>
 
-<a href="index.html" style="color: white; background: #00b5bb; padding: 10px 22px; border-radius: 8px; font-size: 1.1em; box-shadow: 0px 0px 20px #b2ebf2; font-weight: bold;">
-MENÚ PRINCIPAL
-</a>
+<a href="index.html" class="pixel-btn">MENÚ PRINCIPAL</a>
 
+</section>
+
+<!-- 🔳 SEGUNDO CARTEL PRINCIPAL -->
 <header>
-<section style="background-color: rgba(40,46,45,0.85); padding: 32px 25px; border-radius: 16px; width: 80%; margin: 32px auto 0; text-align: center;">
-<h1 style="color: white; margin: 0; font-size: 2.8em; letter-spacing: 2px;">
-DESARROLLO DE SOFTWARE EDUCATIVO
-</h1>
-<h1 style="color: white; font-size: 1.5em; margin-bottom: 10px;">
-Introducción al desarrollo de Software Educativo
-</h1>
-<p style="color: #b2ebf2; font-size: 1.1em; margin-bottom: 0;">
-El software educativo es una herramienta fundamental para potenciar el aprendizaje autónomo y el desarrollo de habilidades cognitivas en diversos contextos.
-</p>
+<section class="pixel-sign" style="width: 80%; margin: 32px auto;">
+  <h1 style="margin: 0; font-size: 2.2em;">DESARROLLO DE SOFTWARE EDUCATIVO</h1>
+  <h2 style="margin: 10px 0; font-size: 1.6em;">Introducción al Software Educativo</h2>
+  <p style="font-size: 1.1em; margin: 0; color: #ffd9b3;">
+    El software educativo potencia el aprendizaje autónomo y el desarrollo cognitivo.
+  </p>
 </section>
 </header>
 
+<!-- 🔳 CONTENIDO CON SECCIONES PIXELADAS -->
 <section style="width: 60%; margin: 30px auto 0;">
-<div style="background-color: rgba(40,46,45,0.65); padding: 18px 24px; border-radius: 10px; margin-bottom: 24px;">
-<h3 style="color: #00b5bb; font-weight: 600; margin-bottom: 10px; text-shadow: 0px 0px 20px #b2ebf2;">¿Qué es el software educativo?</h3>
 
-<p style="color: white; font-size: 1.08em; margin-bottom: 18px;">
-El software educativo está destinado a la enseñanza y el aprendizaje autónomo, permitiendo el desarrollo de habilidades cognitivas. Es cualquier aplicación informática diseñada para apoyar procesos de enseñanza y aprendizaje.
-</p>
+<div class="pixel-sign" style="margin-bottom: 24px; padding: 28px;">
+  <h3 style="font-size: 1.5em; margin-bottom: 15px; color: #fff;">¿Qué es el software educativo?</h3>
 
-<img src="imagenes/Pagina1/PAGINA1Foto1.jpg" style="width:50%; height:auto; margin-bottom: 18px;">
+  <p style="color: white; font-size: 1.1em; margin-bottom: 18px;">
+    Es cualquier aplicación informática diseñada para apoyar procesos de enseñanza y aprendizaje.
+  </p>
 
-<p style="color: white; font-size: 1.08em; margin-bottom: 18px;">
-Su desarrollo combina <span style="color: #00ff00; text-shadow: 0px 0px 20px #00ff00;">pedagogía, psicología, diseño instruccional, tecnología y experiencia de usuario</span> para crear herramientas efectivas y atractivas.
-</p>
+  <img src="imagenes/Pagina1/PAGINA1Foto1.jpg" style="width:50%; margin-bottom: 18px;">
 
-<img src="imagenes/Pagina1/PAGINA1Foto2.jpeg" style="width: 50%; height:auto; margin-bottom: 18px;">
+  <p style="color: white; font-size: 1.1em; margin-bottom: 18px;">
+    Combina <span style="color: #ffd9b3;">pedagogía, psicología, diseño instruccional, tecnología y experiencia de usuario</span>.
+  </p>
+
+  <img src="imagenes/Pagina1/PAGINA1Foto2.jpeg" style="width:50%; margin-bottom: 18px;">
 </div>
 
-<div style="background-color: rgba(40,46,45,0.65); padding: 18px 24px; border-radius: 10px;">
-<h3 style="color: #00b5bb; font-weight: 600; margin-bottom: 10px; text-shadow: 0px 0px 20px #b2ebf2;">
-Proceso de desarrollo
-</h3>
 
-<p style="color: white; font-size: 1.08em; margin-bottom: 10px;">
-El desarrollo de software educativo suele seguir un proceso estructurado que incluye varias etapas clave:
-</p>
+<!-- SEGUNDA SECCIÓN -->
+<div style="padding: 28px; text-align: center;">
 
-<ul style="color: #00ff00; font-size: 1.1em; font-weight: 500; list-style: none; padding: 0; margin-bottom: 0;">
-<li style="margin-bottom: 12px;">
-<a href="PAGINA1/ANALISIS.HTML" style="display: inline-block; color: #00ff00; background: rgba(0,255,0,0.12); border: 2px solid #00ff00; box-shadow: 0px 0px 20px #00ff00; padding: 10px 18px; border-radius: 8px; text-decoration: none; font-weight: bold;">Análisis Pedagógico</a>
-</li>
+  <h3 style="font-size: 1.5em; margin-bottom: 15px; color: #ffd9b3;">Proceso de desarrollo</h3>
 
-<li style="margin-bottom: 12px;">
-<a href="PAGINA1/DISEÑO INSTRUCCIONAL.HTML" style="display: inline-block; color: #00ff00; background: rgba(0,255,0,0.12); border: 2px solid #00ff00; box-shadow: 0px 0px 20px #00ff00; padding: 10px 18px; border-radius: 8px; text-decoration: none; font-weight: bold;">Diseño Instruccional</a>
-</li>
+  <p style="color: white; font-size: 1.1em;">
+    El desarrollo sigue varias etapas estructuradas:
+  </p>
 
-<li style="margin-bottom: 12px;">
-<a href="PAGINA1/DISEÑO DE INTERFAZ (UIUX).HTML" style="display: inline-block; color: #00ff00; background: rgba(0,255,0,0.12); border: 2px solid #00ff00; box-shadow: 0px 0px 20px #00ff00; padding: 10px 18px; border-radius: 8px; text-decoration: none; font-weight: bold;">Diseño de Interfaz (UI/UX)</a>
-</li>
+  <ul style="color: #ffd9b3; font-size: 1.15em; list-style: none; padding: 0;">
+    <li style="margin-bottom: 20px;">
+      <a href="PAGINA1/ANALISIS.HTML" class="pixel-btn" style="font-size: 1em;">Análisis Pedagógico</a>
+    </li>
+    <li style="margin-bottom: 20px;">
+      <a href="PAGINA1/DISEÑO INSTRUCCIONAL.HTML" class="pixel-btn" style="font-size: 1em;">Diseño Instruccional</a>
+    </li>
+    <li style="margin-bottom: 20px;">
+      <a href="PAGINA1/DISEÑO DE INTERFAZ (UIUX).HTML" class="pixel-btn" style="font-size: 1em;">Diseño de Interfaz (UI/UX)</a>
+    </li>
+    <li style="margin-bottom: 20px;">
+      <a href="PAGINA1/IMPLEMENTACIÓN TECNOLOGICA.HTML" class="pixel-btn" style="font-size: 1em;">Implementación Tecnológica</a>
+    </li>
+    <li style="margin-bottom: 20px;">
+      <a href="PAGINA1/EVALUACION Y PRUEBAS.HTML" class="pixel-btn" style="font-size: 1em;">Evaluación y Pruebas</a>
+    </li>
+    <li>
+      <a href="PAGINA1/MEJORAS CONTINUAS.HTML" class="pixel-btn" style="font-size: 1em;">Mejoras Continuas</a>
+    </li>
+  </ul>
 
-<li style="margin-bottom: 12px;">
-<a href="PAGINA1/IMPLEMENTACIÓN TECNOLOGICA.HTML" style="display: inline-block; color: #00ff00; background: rgba(0,255,0,0.12); border: 2px solid #00ff00; box-shadow: 0px 0px 20px #00ff00; padding: 10px 18px; border-radius: 8px; text-decoration: none; font-weight: bold;">Implementación Tecnológica</a>
-</li>
-
-<li style="margin-bottom: 12px;">
-<a href="PAGINA1/EVALUACION Y PRUEBAS.HTML" style="display: inline-block; color: #00ff00; background: rgba(0,255,0,0.12); border: 2px solid #00ff00; box-shadow: 0px 0px 20px #00ff00; padding: 10px 18px; border-radius: 8px; text-decoration: none; font-weight: bold;">Evaluación y Pruebas</a>
-</li>
-
-<li>
-<a href="PAGINA1/MEJORAS CONTINUAS.HTML" style="display: inline-block; color: #00ff00; background: rgba(0,255,0,0.12); border: 2px solid #00ff00; box-shadow: 0px 0px 20px #00ff00; padding: 10px 18px; border-radius: 8px; text-decoration: none; font-weight: bold;">Mejoras Continuas</a>
-</li>
-</ul>
 </div>
-</sectio
+
+</section>
+
+</body>
+</html>

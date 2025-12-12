@@ -3,17 +3,90 @@
 <head>
 <title>Desarrollo de Software Educativo</title>
 
-<!-- VIEWPORT PARA ANDROID -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-/* Fuente */
+  /* 🔳 ESTILO GENERAL PIXEL ART PARA CONTENEDORES */
+.pixel-sign {
+  padding: 20px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+
+  /* --- Colores base --- */
+  background: repeating-linear-gradient(
+    to bottom,
+    #8c3e1c 0px,
+    #8c3e1c 32px,
+    #7a3318 32px,
+    #7a3318 36px
+  );
+
+  /* --- Marco pixelado --- */
+  border: 6px solid #3a3a46;           /* borde principal gris oscuro */
+  border-radius: 0;
+
+  box-shadow:
+    0 0 0 4px #2a2a33,                 /* borde exterior más oscuro */
+    inset 0 0 0 4px #55556a,           /* borde interno claro */
+    inset 0 0 0 8px #2e2e37;           /* contorno interno */
+  
+  /* Bloques píxel sin suavizado */
+  image-rendering: pixelated;
+}
+
+
+/* 🔵 Botones pixelados */
+.pixel-btn {
+  display: inline-block;
+  padding: 12px 28px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  font-size: 1.2em;
+  width: 400px;   /* mismo tamaño */
+  height: 40px;
+
+  font-size: 1em;
+
+  background: repeating-linear-gradient(
+    to bottom,
+    #8c3e1c 0px,
+    #8c3e1c 32px,
+    #7a3318 32px,
+    #7a3318 36px
+  );
+
+  border: 4px solid #5B3A24;
+  border-radius: 0;
+
+  box-shadow:
+    0px 4px 0px #3A2316,
+    0px 8px 0px #3A2316,
+    0px 8px 0px 4px #3A2316;
+
+  image-rendering: pixelated;
+  transition: transform 0.05s ease-out;
+}
+
+.pixel-btn:hover {
+  transform: translateY(-2px);
+}
+
+.pixel-btn:active {
+  transform: translateY(3px);
+  box-shadow:
+    0px 2px 0px #3A2316,
+    0px 4px 0px #3A2316;
+}
+
+
+/* 🔤 Fuente personalizada */
 @font-face {
   font-family: aa56;
   src: url(fuente/RobotoSlab-Regular.woff2);
 }
 
-/* Fondo responsive */
 body {
   background: url("imagenes/aaa.jpeg") no-repeat center center fixed;
   background-size: cover;
@@ -23,13 +96,13 @@ body {
   height: 100%;
 }
 
-/* Imágenes responsive */
+
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* RESPONSIVE PARA CELULARES */
+
 @media (max-width: 600px) {
   h1 {
     font-size: 1.8em !important;
@@ -64,19 +137,18 @@ img {
 ">
 
 <header>
-<section style="background-color: rgba(40,46,45,0.85); padding: 25px; border-radius: 12px; width: 80%; margin: 20px auto 0 auto; text-align: center;">
+<section class="pixel-sign" style="width: 80%; margin: 20px auto;">
 <h1 style="color: white; margin: 0; font-size: 2.5em; letter-spacing: 2px;">DESARROLLO DE SOFTWARE EDUCATIVO</h1>
 
-<h2 style="color: #00b5bb; margin: 8px 0 0 0;">
+<h2 style="color: #c68864; margin: 8px 0 0 0;">
 <em>Página por: 
-<span style="color: #00b5bb; text-shadow: 0 0 10px #00b5bb;">
+<span style="color: #c68864; text-shadow: 0 0 10px #947766;">
 Angel López 
 <img src="imagenes/KTBLANCO.png" style="width: 50px; vertical-align: middle;">
 </span>
 </em>
 </h2>
 
-<hr style="border-top: 2px #00b5bb; margin: 18px 0 10px 0;">
 </section>
 </header>
 
@@ -88,33 +160,33 @@ Angel López
 <ul style="width: 100%; max-width: 420px;">
 
 <li style="margin-bottom: 25px;">
-<a href="PAGINA1.HTML" style="display: block; color: #fff; background: #00b5bb; padding: 12px 20px; border-radius: 8px; font-weight: bold; box-shadow: 0 0 10px #00b5bb;">PÁGINA 1 – Introducción</a>
+<a href="PAGINA1.HTML" class="pixel-btn">PÁGINA 1 – Introducción</a>
 </li>
 
 <li style="margin-bottom: 25px;">
-<a href="PAGINA2.HTML" style="display: block; color: #fff; background: #00b5bb; padding: 12px 20px; border-radius: 8px; font-weight: bold; box-shadow: 0 0 10px #00b5bb;">PÁGINA 2 – Ventajas</a>
+<a href="PAGINA2.HTML" class="pixel-btn">PÁGINA 2 – Ventajas</a>
 </li>
 
 <li style="margin-bottom: 25px;">
-<a href="PAGINA3.HTML" style="display: block; color: #fff; background: #00b5bb; padding: 12px 20px; border-radius: 8px; font-weight: bold; box-shadow: 0 0 10px #00b5bb;">PÁGINA 3 – Tendencias y Futuro del Software Educativo</a>
+<a href="PAGINA3.HTML" class="pixel-btn">PÁGINA 3 – Tendencias y Futuro del Software Educativo</a>
 </li>
 
 <li style="margin-bottom: 25px;">
-<a href="PAGINA4.HTML" style="display: block; color: #fff; background: #00b5bb; padding: 12px 20px; border-radius: 8px; font-weight: bold; box-shadow: 0 0 10px #00b5bb;">PÁGINA 4 – Consideraciones en el Desarrollo de Software Educativo</a>
+<a href="PAGINA4.HTML" class="pixel-btn">PÁGINA 4 – Consideraciones en el Desarrollo de Software Educativo</a>
 </li>
 
 <li style="margin-bottom: 25px;">
-<a href="PAGINA5.HTML" style="display: block; color: #fff; background: #00b5bb; padding: 12px 20px; border-radius: 8px; font-weight: bold; box-shadow: 0 0 10px #00b5bb;">PÁGINA 5 – Evaluación y Pruebas del Software Educativo</a>
+<a href="PAGINA5.HTML" class="pixel-btn">PÁGINA 5 – Evaluación y Pruebas del Software Educativo</a>
 </li>
 
 <li style="margin-bottom: 25px;">
-<a href="PAGINA6.HTML" style="display: block; color: #fff; background: #00b5bb; padding: 12px 20px; border-radius: 8px; font-weight: bold; box-shadow: 0 0 10px #00b5bb;">PÁGINA 6 – Conclusión</a>
+<a href="PAGINA6.HTML" class="pixel-btn">PÁGINA 6 – Conclusión</a>
 </li>
 
 </ul>
 </nav>
 
-<hr style="border-top: 2px solid #00b5bb; margin: 32px 0 24px; width: 100%;">
+<hr style="border-top: 2px solid #ffffff; margin: 32px 0 24px; width: 100%;">
 
 <h5 style="color: white; margin-left: 25px;">
 Pagina por: Angel López 11 "P" - 2025
